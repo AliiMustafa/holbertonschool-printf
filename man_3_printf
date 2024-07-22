@@ -1,0 +1,15 @@
+.TH man page "22 July 2024" "man page for printf"
+.SH NAME
+.BR _printf
+.SH DESCRIPTION
+The _printf() function produces output according to a format which is described
+below. This function write its output to the stdout, the standard output stream.
+.RS 4
+%s : used to print strings
+%c : used to print characters
+%i : print integers of max and min size of an integer (int) type
+%d : print integers of max and min size of an integer (int) type
+.RE
+.SH AUTHORS
+Yunis Gulamov
+Ali Mustafazada
