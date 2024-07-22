@@ -1,4 +1,4 @@
-.TH man page "22 July 2024" "man page for _printf"
+.TH man 3 "22 July 2024" "1" "man page for _printf"
 .SH NAME
 .BR _printf
 - Re-newed printf function
