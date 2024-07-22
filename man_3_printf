@@ -1,9 +1,14 @@
-.TH man page "22 July 2024" "man page for printf"
+.TH man page "22 July 2024" "man page for _printf"
 .SH NAME
 .BR _printf
+- Re-newed printf function
+.SH SYNOPSIS
+If you want to use this function #include "main.h" header must be in the file
 .SH DESCRIPTION
 The _printf() function produces output according to a format which is described
 below. This function write its output to the stdout, the standard output stream.
+.SH USAGE
+If you want to use this function you have to use this key characters: %
 .RS 4
 %s : used to print strings
 %c : used to print characters
@@ -11,7 +16,7 @@ below. This function write its output to the stdout, the standard output stream.
 %d : print integers of max and min size of an integer (int) type
 .RE
 .SH "SEE ALSO"
-printf(1)
+.I printf(1)
 .SH BUGS
 No known bugs.
 .SH AUTHORS
