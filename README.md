@@ -28,6 +28,39 @@ To get `man page` you can use:
 
 `man _printf`
 
+### Examples
+
+```
+#include "main.h"
+
+/**
+ * main - entry point
+ * Return: Always 0
+ */
+int main(void)
+{
+    char *str = "This is our printf function";
+    char c = 'A';
+    int number = 122;
+
+    _printf("Char is %c\n", c);
+    _printf("Str is %s\n", str);
+    _printf("Integer is %d\n", number);
+
+    return (0);
+}
+```
+
+Output:
+```
+
+Char is A
+Str is This is our printf function
+Integer is 122
+
+```
+
+
 # Authors
 
 + Ali Mustafazada [Profile](https://github.com/AliiMustafa)
