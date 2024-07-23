@@ -9,6 +9,8 @@
 * %% - prints one percentage sign instead of two
 
 ### Usage
+
 Prototype of function:
-int _printf(const char *format, ...);
+
+`int _printf(const char *format, ...)`
 
