@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 				leng = leng + j, i = i + 2, j = 0;
 			}
 			else if (format[i] == '%' && format[i + 1] == 'd')
-				_putchar(va_arg(arr, int));
+				_putchar(va_arg(arr, int)), i = i + 2, leng = leng + i;
 			else if (format[i] == '%' && format[i + 1] == '%')
 				_putchar('%'), i = i + 2, leng++;
 			else
