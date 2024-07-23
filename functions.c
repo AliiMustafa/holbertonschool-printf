@@ -11,7 +11,7 @@ int _putchar(char c)
 }
 /**
  * print_char - print characters
- * @args - number of arguments
+ * @args:  number of arguments
  * Return length of chars
  * **/
 int print_char(va_list args)
@@ -23,7 +23,7 @@ int print_char(va_list args)
 }
 /**
  * print_str - print strings
- * @args number of arguments
+ * @args: number of arguments
  * Return length of the string
  * */
 int print_str(va_list args)
@@ -35,7 +35,7 @@ int print_str(va_list args)
 	if (b == NULL)
 	{
 		b = "(null)";
-	} 
+	}
 	for (i = 0; b[i] != '\0'; i++)
 	{
 		_putchar(b[i]);
@@ -44,7 +44,7 @@ int print_str(va_list args)
 }
 /**
  * print_int - print integers
- * @args - number of arguments
+ * @args: number of arguments
  * Return
  * **/
 int print_int(va_list args)
@@ -61,5 +61,4 @@ int print_int(va_list args)
 		_putchar(num_str[k]);
 	}
 	return (k);
-					
 }
