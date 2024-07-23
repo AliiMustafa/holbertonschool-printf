@@ -35,13 +35,10 @@ int print_str(va_list args)
 	if (b == NULL)
 	{
 		b = "(null)";
-	}
-	else 
+	} 
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		for (i = 0; b[i] != '\0'; i++)
-		{
-			_putchar(b[i]);
-		}
+		_putchar(b[i]);
 	}
 	return (i);
 }
