@@ -49,32 +49,14 @@ int print_str(va_list args)
  */
 int print_int(va_list args)
 {
-	int b = 1, l = 0;
-	int num;
-	char digit;
-
-	num = va_arg(args, int);
-	if (num == INT_MIN)
+	int num = va_arg(args, int);
+	int num_length = 0;
+	char num_str[12];
+	int k;
+	num_length = snprintf(num_str, sizeof(num_str), "%d", num);
+	for (k = 0; k < num_length; k++)
 	{
-		num = -2147483648;
+		_putchar(num_str[k]);
 	}
-	if (num < 0)
-	{
-		num = -num;
-		_putchar('-');
-		l++;
-	}
-	while ((num / b) >= 10)
-	{
-		b = b * 10;
-	}
-	while (b != 0)
-	{
-		digit = '0' + num / b;
-		_putchar(digit);
-		num = num % b;
-		b = b / 10;
-		l++;
-	}
-	return (l);
+	return (k);
 }
