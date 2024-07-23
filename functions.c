@@ -58,6 +58,7 @@ int print_int(va_list args)
 	{
 		num = -num;
 		_putchar('-');
+		l++;
 	}
 	while ((num / b) >= 10)
 	{
