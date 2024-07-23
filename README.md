@@ -14,3 +14,15 @@ Prototype of function:
 
 `int _printf(const char *format, ...)`
 
+To use our printf function you need to include head file "main.h":
+
+`#include "main.h"`
+
+To get `man page` you can use:
+
+`man _printf`
+
+# Authors
+
++ Ali Mustafazada [Profile](https://github.com/AliiMustafa)
++ Yunis Gulamov [Profile](https://github.com/Yunis003)
