@@ -1,6 +1,4 @@
-#include <unistd.h>
-#include <stdarg.h>
-#include <stdio.h>
+#include "main.h"
 /**
  * _putchar - function
  * @c: variable
@@ -18,10 +16,10 @@ int _putchar(char c)
  * **/
 int print_char(va_list args)
 {
-	char *a;
+	char a;
 
-	a = va_arg(args, int);
-	_putchar(c);
+	a = _putchar(va_arg(args, int));
+	return (a);
 }
 /**
  * print_str - print strings
@@ -34,9 +32,9 @@ int print_str(va_list args)
 	int i;
 
 	b = va_arg(args, char*);
-	if (b = NULL)
+	if (b == NULL)
 	{
-		b = "(null)"
+		b = "(null)";
 	}
 	else 
 	{
@@ -54,4 +52,17 @@ int print_str(va_list args)
  * **/
 int print_int(va_list args)
 {
+	int num = va_arg(args, int);
+	int num_length = 0;
+	char num_str[12];
+	int k;
+
+	num_length = snprintf(num_str, sizeof(num_str), "%d", num);
+
+	for (k = 0; k < num_length; k++)
+	{
+		_putchar(num_str[k]);
+	}
+	return (k);
+					
 }
