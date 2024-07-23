@@ -12,8 +12,8 @@ int _putchar(char c)
 /**
  * print_char - print characters
  * @args:  number of arguments
- * Return length of chars
- * **/
+ * Return: length of chars
+ */
 int print_char(va_list args)
 {
 	char a;
@@ -24,8 +24,8 @@ int print_char(va_list args)
 /**
  * print_str - print strings
  * @args: number of arguments
- * Return length of the string
- * */
+ * Return: length of the string
+ */
 int print_str(va_list args)
 {
 	char *b;
@@ -45,8 +45,8 @@ int print_str(va_list args)
 /**
  * print_int - print integers
  * @args: number of arguments
- * Return
- * **/
+ * Return: lengs of num
+ */
 int print_int(va_list args)
 {
 	int b = 1, l = 0;
@@ -56,7 +56,7 @@ int print_int(va_list args)
 	num = va_arg(args, int);
 	if (num < 0)
 	{
-		num = - num;
+		num = -num;
 		_putchar('-');
 	}
 	while ((num / b) >= 10)
