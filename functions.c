@@ -54,6 +54,10 @@ int print_int(va_list args)
 	char digit;
 
 	num = va_arg(args, int);
+	if (num == INT_MIN)
+	{
+		num = -2147483648;
+	}
 	if (num < 0)
 	{
 		num = -num;
