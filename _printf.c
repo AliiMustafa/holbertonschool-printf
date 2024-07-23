@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _printf - function
  * @format: pointer
@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list arr;
-	int i = 0, j = 0, leng = 0;
+	int i = 0, j = 0, leng = 0, k;
 	char *temp;
 
 	va_start(arr, format);
@@ -30,8 +30,22 @@ int _printf(const char *format, ...)
 					_putchar(temp[j]), j++;
 				leng = leng + j, i = i + 2, j = 0;
 			}
-			else if (format[i] == '%' && format[i + 1] == 'd')
-				_putchar(va_arg(arr, int)), i = i + 2, leng = leng + i;
+			else if (format[i] == '%' && (format[i + 1] == 'd' || format[i + 1] == 'i'))
+			{
+				int num = va_arg(arr, int);
+				int num_length = 0;
+				char num_str[20];
+
+				num_length = snprintf(num_str, sizeof(num_str), "%d", num);
+
+					for (k = 0; k < num_length; k++)
+					{
+						_putchar(num_str[k]);
+						leng++;
+					}
+
+					i = i + 2;
+			}
 			else if (format[i] == '%' && format[i + 1] == '%')
 				_putchar('%'), i = i + 2, leng++;
 			else
