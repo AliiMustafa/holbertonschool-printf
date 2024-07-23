@@ -1,4 +1,6 @@
 #include <unistd.h>
+#include <stdarg.h>
+#include <stdio.h>
 /**
  * _putchar - function
  * @c: variable
@@ -9,6 +11,11 @@ int _putchar(char c)
 	write(1, &c, 1);
 	return (0);
 }
+/**
+ * print_char - print characters
+ * @args - number of arguments
+ * Return length of chars
+ * **/
 int print_char(va_list args)
 {
 	char *a;
@@ -40,6 +47,11 @@ int print_str(va_list args)
 	}
 	return (i);
 }
+/**
+ * print_int - print integers
+ * @args - number of arguments
+ * Return
+ * **/
 int print_int(va_list args)
 {
 }

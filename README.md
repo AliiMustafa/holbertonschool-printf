@@ -8,6 +8,12 @@
 * %i - prints the value of type integer
 * %% - prints one percentage sign instead of two
 
+### Environment
+* Language: C
+* OS: Ubuntu 20.04 LTS
+* Compiler: gcc 11.4.0
+* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+
 ### Usage
 
 Prototype of function:
