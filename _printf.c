@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 			if (format[0] == '%' && !format[1])
 				return (-1);
 			else if (format[i] == '%' && format[i + 1] == 'c')
-				printf_char(arr), i = i + 2, leng++;
+				print_char(arr), i = i + 2, leng++;
 			else if (format[i] == '%' && format[i + 1] == 's')
 			{
 				leng = leng + print_str(arr), i = i + 2;
