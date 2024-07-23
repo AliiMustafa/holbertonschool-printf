@@ -53,6 +53,7 @@ int print_int(va_list args)
 	int num_length = 0;
 	char num_str[12];
 	int k;
+
 	num_length = snprintf(num_str, sizeof(num_str), "%d", num);
 	for (k = 0; k < num_length; k++)
 	{
