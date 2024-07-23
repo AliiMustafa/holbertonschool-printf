@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include "functions.c"
 /**
  * _printf - function
  * @format: pointer
