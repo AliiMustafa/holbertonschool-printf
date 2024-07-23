@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 			{
 				int num = va_arg(arr, int);
 				int num_length = 0;
-				char num_str[20];
+				char num_str[12];
 
 				num_length = snprintf(num_str, sizeof(num_str), "%d", num);
 
